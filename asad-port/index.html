@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Asad</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="images/logopink.png" alt="logo" class="logopink"></a>
+        </div>
+        <div class="links">
+            <button onclick="topFunction1()" class="linktext1" title="Go to top">ABOUT</button>
+            <button onclick="topFunction2()" class="linktext2" title="Go to top">PORTFOLIO</button>
+            <button onclick="topFunction3()" class="linktext3" title="Go to top">CONTACT</button>
+        </div>
+    </nav>
+
+    <div class="frontpage">
+        <img src="/asad-port/images/logopink.png" alt="frontlogo" class="frontlogo">
+    </div>
+
+    <header>
+      <div>
+        <div class="personaltext">
+          <div>
+            <h1>About Me</h1>
+            <p>
+              I live in Copenhagen and i'm currently studying multimedia design.
+            </p>
+          </div>
+          <div>
+              <img src="/asad-port/images/logopink.png" alt="profilelogo" class="profilepic">
+          </div>
+        </div>
+        <div>
+          <h2>Skills</h2>
+        </div>
+      </div>
+      <div class="text">
+        <div>
+          <h3>Design</h3>
+          <p>
+            I have experince with Photoshop. I have been working on photo editing and logo designing on Photoshop and on Adobe Illustrator so I know my way around the software
+          </p>
+        </div>
+        <div>
+            <h3>Coding</h3>
+          <p>
+            I have experince with the coding langauges such as. HTML5, CSS, Javascript and some C++. I’m well experinced with coding websites.
+          </p>
+        </div>
+        <div>
+            <h3>Marketing</h3>
+          <p>
+              I have studied Bachelor of Science (BSc) in Business Administration and Management Science for 2 years so I have a quite a bit of knowledge about business and marketing.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="portfolio">
+        <p class="porthead">
+            PORTFOLIO
+        </p>
+        <img src="/asad-port/images/bridgemoon.jpg" alt="portpic" class="portpic">
+        <img src="/asad-port/images/IMG_1017.jpg" alt="portpic" class="portpic">
+        <img src="/asad-port/images/IMG_1026.jpeg" alt="portpic" class="portpic">
+        <img src="/asad-port/images/atvsand.jpg" alt="portpic" class="portpic">
+        <img src="/asad-port/images/lightleaf.jpg" alt="portpic" class="portpic">
+        <img src="/asad-port/images/mountnight.jpg" alt="portpic" class="portpic">
+        <img src="/asad-port/images/light.jpg" alt="portpic" class="portpic">
+    </section>
+
+    <div class="contacthead">
+        <h1>
+            CONTACT
+        </h1>
+    </div>
+    <section class="contact">
+        <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" class="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" class="lname" name="lastname" placeholder="Your last name..">
+                  <label for="subject">Subject</label>
+                  <textarea class="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  <input type="submit" value="Submit">
+              
+                </form>
+        </div>
+        <div class="sociallink">
+            <div>
+                <a href="#"><img src="/asad-port/images/facebookblue.png" alt="face" class="logolink"></a>
+            </div>
+            <div>
+                <a href="#"><img src="/asad-port/images/twitterblue.png" alt="twit" class="logolink"></a>
+            </div>
+            <div>
+                <a href="#"><img src="/asad-port/images/youtubeblue.png" alt="youtube" class="logolink"></a>
+            </div>
+            <div>
+                <a href="#"><img src="/asad-port/images/instablue.png" alt="insta" class="logolink"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p> &copy Asad 2021</p>
+    </footer>
+
+<script>
+    //Get the button NUMBER 1:
+mybutton = document.getElementsByClassName("linktext1");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction1() {
+  document.body.scrollTop = 900; // For Safari
+  document.documentElement.scrollTop = 850; // For Chrome, Firefox, IE and Opera
+}
+    //Get the button NUMBER 2:
+    mybutton = document.getElementsByClassName("linktext2");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction2() {
+  document.body.scrollTop = 900; // For Safari
+  document.documentElement.scrollTop = 1600; // For Chrome, Firefox, IE and Opera
+}
+    //Get the button NUMBER 3:
+    mybutton = document.getElementsByClassName("linktext3");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction3() {
+  document.body.scrollTop = 900; // For Safari
+  document.documentElement.scrollTop = 7000; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+
+</body>
+</html>
